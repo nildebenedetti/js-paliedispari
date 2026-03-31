@@ -39,6 +39,13 @@ console.log(numberCpu);    // check
 let sumNumbers = numberPlayer + numberCpu; // init variabile somma 
 console.log(sumNumbers);  // check
 
+// controllo se somma numeri e'pari
+
+ let resultChecker = evenOddChecker(sumNumbers);
+ console.log(resultChecker);
+
+// andiamo a matchare 
+
 
 
 
