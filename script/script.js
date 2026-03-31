@@ -5,7 +5,7 @@
 const parolaTest = 'anna';
 
 
-let palindromo = palindromoChecker(parolaTest);
-console.log(palindromo);
+const isItPalindromo = palindromoChecker(parolaTest);
+console.log(isItPalindromo);
 
 
