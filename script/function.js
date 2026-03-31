@@ -1,6 +1,7 @@
+//=================================================================
 // # 1 
 // creare uan funzioen per capire se una parola palindroma
-//
+//=================================================================
 // partiamo dalla stringa parola
 // con il ciclo for con init i = .lenght - 1 e incremento i--
 // dopo ciascun gro stampiamo il risultato in un array
@@ -27,3 +28,12 @@ function palindromoChecker (parolaToCheck) {
 
         return palindromo;
 }
+
+//==================================================================
+//=====FUNZIONE PER CALCOLARE NUMERO RANDOM TRA DUE NUMERI==========
+
+    function myRandom(minValue, maxValue) {
+        return Math.floor(Math.random() *  (maxValue - minValue + 1)) + minValue; // restituisce numero random tra intervallo di numeri
+    }
+
+//==================================================================
