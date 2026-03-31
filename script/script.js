@@ -18,6 +18,7 @@ Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 Dichiariamo chi ha vinto. */
 
 let validChoice = false; // add valore booleano per uscire da do-while
+const userChoice = []; // array per registrare scelta utente
 
 do {
     let choiceEvenOdd = prompt('Scegli: pari o dispari?','pari') // prompt per scelta utente: pari o dispari
@@ -26,6 +27,7 @@ do {
     } else {
         console.log(`Hai scelto ${choiceEvenOdd}`) // conferma scelta utente in console
         validChoice = true;
+        userChoice.push(choiceEvenOdd);
     }
 } while (validChoice === false)
 
@@ -33,18 +35,23 @@ do {
 const numberPlayer = Number(prompt('Inserisci un numero da 1 a 5','2')); // prompt per scelta numero utente
 const numberCpu = myRandom(1,5); // generazione casuale numero cpu
 
-console.log(numberPlayer); // check
-console.log(numberCpu);    // check
+console.log(`Il tuo numero e' ${numberPlayer}.`); // check
+console.log(`Il numero di Cpu e' ${numberCpu}`);    // check
 
 let sumNumbers = numberPlayer + numberCpu; // init variabile somma 
-console.log(sumNumbers);  // check
-
-// controllo se somma numeri e'pari
+console.log(`La somma dei due numeri e' ${sumNumbers}`);  //check
+ // controllo se somma numeri e'pari
 
  let resultChecker = evenOddChecker(sumNumbers);
- console.log(resultChecker);
+ console.log(`Quindi il risultato e' ${resultChecker}`);
 
-// andiamo a matchare 
+// andiamo a matchare scelta utente (pari/dispari) con resultchecker
+
+if ( userChoice.toString('') === resultChecker) {
+    console.log(`Vittoria! Complimenti, hai indovinato!`)
+} else {
+    console.log(`Stavolta hai perso...riproviamo?`)
+}
 
 
 
