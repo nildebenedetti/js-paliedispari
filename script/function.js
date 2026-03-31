@@ -37,3 +37,17 @@ function palindromoChecker (parolaToCheck) {
     }
 
 //==================================================================
+//=====# 2 EVEN ODD CHECKER ========================================
+
+function evenOddChecker (numberToCheck) {
+    if (numberToCheck % 2 === 0) {
+    isNumberEven = true;
+    } else {
+    isNumberEven = false;
+    }
+    // aggiungo terna logica per dare pari o dispari
+    const evenOrOdd = (isNumberEven === true ) ? ('pari') : ('dispari');
+    return evenOrOdd;
+}
+
+//===================================================================
