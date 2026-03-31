@@ -17,6 +17,8 @@ Sommiamo i due numeri
 Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 Dichiariamo chi ha vinto. */
 
+const choiceEvenOdd = prompt('Scegli:pari o dispari?','pari') 
+
 const numberPlayer = Number(prompt('Inserisci un numero da 1 a 5','2'));
 const numberCpu = myRandom(1,5);
 
@@ -25,6 +27,8 @@ console.log(numberCpu);
 
 let sumNumbers = numberPlayer + numberCpu;
 console.log(sumNumbers);
+
+
 
 
 
