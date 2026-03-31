@@ -17,7 +17,18 @@ Sommiamo i due numeri
 Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 Dichiariamo chi ha vinto. */
 
-const choiceEvenOdd = prompt('Scegli:pari o dispari?','pari') // prompt per scelta utente: pari o dispari
+let validChoice = false; // add valore booleano per uscire da do-while
+
+do {
+    let choiceEvenOdd = prompt('Scegli: pari o dispari?','pari') // prompt per scelta utente: pari o dispari
+    if (choiceEvenOdd !== 'pari' && choiceEvenOdd !== 'dispari') { // check coerenza
+        console.error('Iserisci una scelta valida!');
+    } else {
+        console.log(`Hai scelto ${choiceEvenOdd}`) // conferma scelta utente in console
+        validChoice = true;
+    }
+} while (validChoice === false)
+
 
 const numberPlayer = Number(prompt('Inserisci un numero da 1 a 5','2')); // prompt per scelta numero utente
 const numberCpu = myRandom(1,5); // generazione casuale numero cpu
