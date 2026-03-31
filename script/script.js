@@ -28,6 +28,12 @@ console.log(numberCpu);    // check
 let sumNumbers = numberPlayer + numberCpu; // init variabile somma 
 console.log(sumNumbers);  // check
 
+if (sumNumbers % 2 === 0) {
+    isNumberEven = true;
+} else {
+    isNumberEven = false;
+}
+console.log(isNumberEven);
 
 
 
